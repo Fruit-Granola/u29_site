@@ -7,5 +7,26 @@
     </head>
 
     <body>
-      <h1>Hello, World!</h1>
+      <div class="description">
+        <h1>このページでは、アップロードされたCSVファイルから応募数の予測を出力します</h1>
+        <h2>下のボタンからファイルをアップロードしてください</h2>
+      </div>
+      <div class="upload">
+        <label class="upload-label">
+          ファイルを選択
+          <input type="file">
+        </label>
+        <p></p>
+        <label class="upload-button">
+          送信する
+          <button type="submit">
+        </label>
+      </div>
+      <div class="download">
+        <h2>下のボタンから予測データをダウンロードできます</h2>
+        <label class="download-button">
+          ダウンロード
+          <a href="~/prediction.csv" download="Prediction.csv">応募数の予測データをダウンロードする</a>
+        </label>
+      </div>
     </body>
